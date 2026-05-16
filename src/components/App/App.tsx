@@ -8,51 +8,57 @@ import ErrorMessage from "../ErrorMessage/ErrorMessage";
 import Pagination from "../Pagination/Pagination";
 import Modal from "../Modal/Modal";
 import NoteForm from "../NoteForm/NoteForm";
+import SearchBox from "../SearchBox/SearchBox";
+import { useDebouncedCallback } from "use-debounce";
 
 export default function App() {
   const [searchQuery, setSearchQuery] = useState("");
   const [currentPage, setCurrentPage] = useState(1);
-  const [sortByQuery, setSortByQuery] = useState("");
-  const [totalPage, setTotalPage] = useState(0);
   const [isOpenModal, setIsOpenModal] = useState(false);
-  const [isCloseModal, setIsCloseModal] = useState(false);
 
   const { data, isLoading, isError, isSuccess, isFetching } = useQuery({
-    queryKey: ["notes", searchQuery, currentPage, sortByQuery, totalPage],
-    queryFn: () => fetchNotes(searchQuery, currentPage, sortByQuery, totalPage),
+    queryKey: ["notes", searchQuery, currentPage],
+    queryFn: () => fetchNotes(searchQuery, currentPage),
     placeholderData: keepPreviousData,
   });
 
-  const handleClick = () => {
+  const openModal = () => {
     setIsOpenModal(true);
   };
   const closeModal = () => {
-    setIsCloseModal(true);
+    setIsOpenModal(false);
   };
+
+  const handleChange = useDebouncedCallback(
+    (event: React.ChangeEvent<HTMLInputElement>) => {
+      setSearchQuery(event.target.value);
+    },
+    300,
+  );
 
   return (
     <div className={css.app}>
       <header className={css.toolbar}>
-        {/* Компонент SearchBox */}
-        {isSuccess && totalPage > 1 && (
+        <SearchBox inputValue={searchQuery} handleChange={handleChange} />
+        {isSuccess && data.totalPages > 1 && (
           <Pagination
             totalPages={data.totalPages}
             currentPage={currentPage}
-            onPageChange={(currentPage) => currentPage + 1}
+            onPageChange={setCurrentPage}
           />
         )}
-        <button onClick={handleClick} className={css.button}>
+        <button onClick={openModal} className={css.button}>
           Create note +
         </button>
-        {isOpenModal && (
-          <Modal onClose={closeModal}>
-            <NoteForm />
-          </Modal>
-        )}
-        {isSuccess && data.notes.length > 0 && <NoteList notes={data.notes} />}
-        {(isLoading || isFetching) && <Loader />}
-        {isError && <ErrorMessage />}
       </header>
+      {isOpenModal && (
+        <Modal onClose={closeModal}>
+          <NoteForm onClose={closeModal} />
+        </Modal>
+      )}
+      {isSuccess && data.notes.length > 0 && <NoteList notes={data.notes} />}
+      {(isLoading || isFetching) && <Loader />}
+      {isError && <ErrorMessage />}
     </div>
   );
 }

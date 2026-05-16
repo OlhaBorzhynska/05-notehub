@@ -7,7 +7,7 @@ interface ModalProps {
   children: React.ReactNode;
 }
 
-export default function Modal({ onClose }: ModalProps) {
+export default function Modal({ onClose, children }: ModalProps) {
   const handleBackdropClick = (event: React.MouseEvent<HTMLDivElement>) => {
     if (event.target === event.currentTarget) {
       onClose();
@@ -36,7 +36,7 @@ export default function Modal({ onClose }: ModalProps) {
       role="dialog"
       aria-modal="true"
     >
-      <div className={css.modal}>{/* */}</div>
+      <div className={css.modal}>{children}</div>
     </div>,
     document.getElementById("modal-root") as HTMLDivElement,
   );
