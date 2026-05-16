@@ -9,7 +9,7 @@ import { createNote } from "../../services/noteService";
 const NoteFormSchema = Yup.object().shape({
   title: Yup.string()
     .min(3, "Title must be at least 3 characters")
-    .max(30, "Title is too long")
+    .max(50, "Title is too long")
     .required("Title is required"),
   content: Yup.string().max(500, "Content is too long"),
   tag: Yup.string()
