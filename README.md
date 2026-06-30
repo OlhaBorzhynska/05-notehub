@@ -61,7 +61,7 @@
 **Клонувати репозиторій:**
 
 ```bash
-git clone https://github.com/OlyaBorzynska/05-notehub.git
+git clone https://github.com/OlhaBorzhynska/05-notehub.git
 ```
 
 **Встановити залежності:**
