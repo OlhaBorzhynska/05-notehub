@@ -35,7 +35,7 @@ The project demonstrates working with asynchronous requests, API integration, mo
 
 [![My Skills](https://skillicons.dev/icons?i=js,html,css,github,vite,figma,react&theme=light)](https://skillicons.dev)
 
-| Використані технології та бібліотеки      | 
+| Technologies and Libraries Used      | 
 | :---------------------------------------- | 
 | **React**                                 | 
 | **TypeScript**                            | 
