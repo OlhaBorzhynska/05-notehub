@@ -46,13 +46,6 @@ The project demonstrates working with asynchronous requests, API integration, mo
 | **Yup**                                   | 
 | **CSS Modules**                           |
 
-
-## 💡 Additional Information
-
-- **Backend API:** The project is integrated with
-  [NoteHub API](https://notehub-public.goit.study/api/docs).
-- **Deployment:** Automated through Vercel.
-
 ---
 
 ## ⚙️ How to Run the Project Locally
