@@ -1,4 +1,4 @@
-# 📝 NoteHub — Простір для ваших ідей
+# 📝 NoteHub — A Space for Your Ideas
 
 <p align="center">
   <img src="public/NoteHub-preview.png" alt="NoteHub preview" width="100%">
@@ -6,71 +6,70 @@
 
 ---
 
-## 🎯 Про проєкт
+## 🎯 About the Project
 
-📄 **Live Page:**
-[Переглянути проєкт](https://05-notehub-green-ten.vercel.app/)
+📄 **Live Page:** [View Project](https://05-notehub-green-ten.vercel.app/)
 
-**NoteHub** — це сучасний застосунок для керування нотатками, створений за допомогою React, TypeScript та TanStack Query. Додаток дозволяє створювати, шукати, переглядати та видаляти нотатки через зручний та адаптивний інтерфейс.
+**NoteHub** is a modern note management application built with React, TypeScript, and TanStack Query. The application allows users to create, search, view, and delete notes through a convenient and responsive interface.
 
-Проєкт демонструє роботу з асинхронними запитами, інтеграцією API, модальними вікнами, валідацією форм, відкладеним пошуком (debounce) та керуванням серверним станом.
-
----
-
-## 🚀 Ключові можливості (Features)
-
-- Створення нових нотаток
-- Видалення нотаток
-- Пошук нотаток із debounce
-- Пагінація
-- Модальне вікно для створення нотатки
-- Валідація форм через Formik та Yup
-- Робота з API через Axios
-- Керування серверним станом за допомогою TanStack Query
-- Обробка станів завантаження та помилок
-- Адаптивний інтерфейс із CSS Modules
+The project demonstrates working with asynchronous requests, API integration, modal windows, form validation, debounced search, and server state management.
 
 ---
 
-## 🛠 Використані технології
+## 🚀 Key Features
+
+- Create new notes
+- Delete notes
+- Search notes with debounce
+- Pagination
+- Modal window for creating a note
+- Form validation using Formik and Yup
+- API integration using Axios
+- Server state management with TanStack Query
+- Loading and error state handling
+- Responsive interface using CSS Modules
+
+---
+
+## 🛠 Technologies Used
 
 [![My Skills](https://skillicons.dev/icons?i=js,html,css,github,vite,figma,react&theme=light)](https://skillicons.dev)
 
 | Використані технології та бібліотеки      | 
 | :---------------------------------------- | 
-| **React** | 
-| **TypeScript**     | 
-| **Vite** | 
-| **TanStack Query** | 
-| **Axios**     |
-| **Formik** | 
-| **Yup** | 
-| **CSS Modules**     |
+| **React**                                 | 
+| **TypeScript**                            | 
+| **Vite**                                  | 
+| **TanStack Query**                        | 
+| **Axios**                                 |
+| **Formik**                                | 
+| **Yup**                                   | 
+| **CSS Modules**                           |
 
 
-## 💡 Супутня інформація
+## 💡 Additional Information
 
-- **Backend API:** Проєкт інтегровано з
+- **Backend API:** The project is integrated with
   [NoteHub API](https://notehub-public.goit.study/api/docs).
-- **Деплой:** Автоматизовано через Vercel.
+- **Deployment:** Automated through Vercel.
 
 ---
 
-## ⚙️ Як запустити проєкт локально
+## ⚙️ How to Run the Project Locally
 
-**Клонувати репозиторій:**
+**Clone the repository:**
 
 ```bash
 git clone https://github.com/OlhaBorzhynska/05-notehub.git
 ```
 
-**Встановити залежності:**
+**Install dependencies:**
 
 ```bash
 npm install
 ```
 
-**Запустити режим розробки:**
+**Run the development mode:**
 
 ```bash
 npm run dev
