@@ -69,3 +69,16 @@ npm install
 ```bash
 npm run dev
 ```
+
+---
+
+## 👩‍💻 Author
+
+**Olha Borzhynska** - Junior Full-Stack Developer
+
+GitHub: https://github.com/OlhaBorzhynska
+
+LinkedIn: www.linkedin.com/in/olha-borzhynska
+
+Email: mykytlo@gmail.com
+
