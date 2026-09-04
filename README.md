@@ -10,24 +10,26 @@
 
 📄 **Live Page:** [View Project](https://05-notehub-green-ten.vercel.app/)
 
-**NoteHub** is a modern note management application built with React, TypeScript, and TanStack Query. The application allows users to create, search, view, and delete notes through a convenient and responsive interface.
+**NoteHub** is a modern note-taking application built with React, TypeScript, and TanStack Query.
 
-The project demonstrates working with asynchronous requests, API integration, modal windows, form validation, debounced search, and server state management.
+The application allows users to create, search, view, and delete notes through a convenient and responsive interface.
+
+The project demonstrates practical experience with asynchronous requests, API integration, modal forms, form validation, debounced search, and server state management.
 
 ---
 
-## 🚀 Key Features
+## 🚀 Features
 
-- Create new notes
-- Delete notes
-- Search notes with debounce
+- Create and delete notes
+- Debounced note search
 - Pagination
-- Modal window for creating a note
+- Modal form for creating notes
 - Form validation using Formik and Yup
 - API integration using Axios
 - Server state management with TanStack Query
 - Loading and error state handling
-- Responsive interface using CSS Modules
+- Responsive layout
+- CSS Modules for styling
 
 ---
 
@@ -35,8 +37,6 @@ The project demonstrates working with asynchronous requests, API integration, mo
 
 [![My Skills](https://skillicons.dev/icons?i=js,html,css,github,vite,figma,react&theme=light)](https://skillicons.dev)
 
-| Technologies and Libraries Used      | 
-| :---------------------------------------- | 
 | **React**                                 | 
 | **TypeScript**                            | 
 | **Vite**                                  | 
@@ -62,7 +62,7 @@ git clone https://github.com/OlhaBorzhynska/05-notehub.git
 npm install
 ```
 
-**Run the development mode:**
+**Start the development server:**
 
 ```bash
 npm run dev
