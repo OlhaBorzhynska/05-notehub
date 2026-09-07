@@ -33,8 +33,7 @@ The project demonstrates practical experience with asynchronous requests, API in
 
 ---
 
-## 🛠 Technologies Used
-
+## 🛠 Tech Stack
 [![My Skills](https://skillicons.dev/icons?i=js,html,css,github,vite,figma,react&theme=light)](https://skillicons.dev)
 
 | Technologies and Libraries Used      | 
